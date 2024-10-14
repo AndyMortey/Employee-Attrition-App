@@ -1,0 +1,303 @@
+age,department,education_level,education_field,environment_satisfaction,job_satisfaction,marital_status,gross_salary,work_life_balance,length_of_service,attrition
+41,Personal Finance,2,Finance,2,4,Single,5993.0,1,6,Yes
+37,Personal Finance,1,Finance,4,3,Single,2090.0,3,7,Yes
+33,Personal Finance,1,Finance,4,3,Married,2909.0,3,8,No
+27,Personal Finance,1,Finance,1,2,Married,3468.0,3,2,No
+32,Personal Finance,1,Finance,4,4,Single,3068.0,2,7,Yes
+30,Personal Finance,1,Finance,4,3,Married,2693.0,3,1,Yes
+38,Personal Finance,1,Finance,4,3,Single,9526.0,3,9,Yes
+36,Personal Finance,1,Finance,3,3,Married,5237.0,3,7,Yes
+35,Personal Finance,1,Finance,1,2,Married,2426.0,3,5,Yes
+29,Personal Finance,2,Finance,4,3,Single,4200.0,3,9,Yes
+31,Personal Finance,1,Finance,1,3,Single,2911.0,2,5,Yes
+34,Personal Finance,1,Finance,2,4,Single,2661.0,3,2,No
+28,Personal Finance,1,Finance,3,3,Single,2028.0,3,3,Yes
+29,Personal Finance,1,Finance,2,1,Single,9980.0,3,1,No
+32,Tech Department,1,Computer Science,1,2,Married,3298.0,2,6,No
+22,Brokerage,1,Finance,4,4,Married,2935.0,2,1,No
+53,Management,2,Business Mgt,1,4,Married,15427.0,3,13,No
+38,Client Services,1,Business Admin,4,4,Single,3944.0,3,3,No
+24,Tech Department,1,Computer Science,1,3,Married,4011.0,2,4,No
+36,Legal and Admin,1,Law,3,1,Single,3407.0,3,5,Yes
+34,Customer Service,1,Social Science,1,2,Single,11994.0,3,5,No
+21,Portfolio,1,Finance,3,4,Single,1232.0,3,1,No
+34,Human Resource,1,Human Resources,2,1,Single,4200.0,3,4,Yes
+32,Marketing Department,1,Marketing,2,1,Single,3919.0,3,5,Yes
+46,Management,2,Business Mgt,2,1,Single,18947.0,2,2,No
+33,Marketing Department,1,Marketing,3,4,Single,2496.0,3,1,No
+30,Marketing Department,1,Marketing,4,3,Single,2206.0,3,3,No
+39,Marketing Department,1,Marketing,4,4,Married,2086.0,4,1,Yes
+24,Marketing Department,1,Marketing,2,4,Married,2293.0,2,2,Yes
+50,Marketing Department,2,Marketing,1,3,Married,2683.0,3,3,Yes
+35,Marketing Department,1,Marketing,4,4,Married,2014.0,3,2,No
+36,Marketing Department,1,Marketing,2,1,Married,3419.0,4,1,No
+33,Marketing Department,1,Marketing,3,1,Married,5376.0,3,5,No
+35,Customer Service,1,Social Science,3,4,Single,1951.0,3,3,Yes
+27,Customer Service,1,Social Science,4,1,Single,4200.0,3,1,Yes
+26,Customer Service,1,Social Science,1,3,Single,2293.0,2,1,Yes
+27,Customer Service,1,Social Science,4,3,Single,8726.0,3,4,Yes
+30,Customer Service,1,Social Science,3,4,Single,4011.0,3,4,No
+34,Customer Service,1,Social Science,2,3,Single,4568.0,3,5,No
+37,Customer Service,2,Social Science,2,2,Married,3022.0,3,1,No
+35,Customer Service,1,Social Science,4,4,Married,2269.0,3,1,No
+28,Customer Service,1,Social Science,3,3,Single,3441.0,2,2,Yes
+35,Customer Service,2,Social Science,3,1,Single,9884.0,3,4,No
+26,Customer Service,1,Social Science,3,4,Married,4157.0,2,2,No
+33,Customer Service,1,Social Science,1,4,Single,13458.0,3,5,No
+35,Marketing Department,1,Marketing,2,1,Married,9069.0,2,7,No
+35,Portfolio,1,Finance,3,1,Married,4014.0,3,2,Yes
+31,Portfolio,1,Finance,4,4,Single,5915.0,2,4,Yes
+37,Portfolio,1,Finance,1,3,Single,5993.0,4,3,Yes
+32,Portfolio,1,Finance,1,4,Married,6162.0,3,6,Yes
+38,Portfolio,1,Finance,4,4,Single,2406.0,3,8,Yes
+36,Portfolio,1,Finance,3,3,Married,10096.0,3,7,Yes
+36,Portfolio,1,Finance,2,2,Single,6499.0,3,6,Yes
+35,Portfolio,1,Finance,2,1,Married,2194.0,2,3,No
+36,Portfolio,1,Finance,4,3,Married,3388.0,2,1,Yes
+29,Portfolio,1,Finance,3,2,Married,2703.0,3,5,No
+31,Portfolio,1,Finance,3,2,Single,2501.0,3,1,No
+32,Portfolio,1,Finance,2,2,Married,6220.0,3,1,No
+36,Portfolio,1,Finance,2,4,Married,3038.0,3,1,No
+31,Portfolio,1,Finance,3,4,Single,4424.0,3,5,No
+35,Portfolio,1,Finance,3,1,Single,4312.0,3,6,No
+37,Tech Department,1,Computer Science,1,3,Single,13664.0,4,5,Yes
+30,Tech Department,1,Computer Science,4,4,Married,5126.0,2,2,Yes
+35,Tech Department,1,Computer Science,2,3,Single,2859.0,3,6,Yes
+38,Tech Department,1,Computer Science,2,4,Married,5329.0,3,3,Yes
+34,Tech Department,1,Computer Science,1,2,Married,4325.0,3,5,Yes
+23,Tech Department,1,Computer Science,3,1,Married,2322.0,3,1,Yes
+30,Tech Department,1,Computer Science,3,4,Married,4152.0,3,1,Yes
+40,Tech Department,2,Computer Science,3,2,Married,13503.0,2,6,Yes
+30,Tech Department,1,Computer Science,3,2,Single,5209.0,2,1,Yes
+32,Tech Department,1,Computer Science,2,3,Single,5010.0,3,2,Yes
+24,Tech Department,1,Computer Science,1,3,Married,4999.0,2,3,No
+28,Tech Department,1,Computer Science,2,3,Married,4221.0,4,5,No
+37,Tech Department,1,Computer Science,3,1,Single,2073.0,3,3,Yes
+32,Tech Department,1,Computer Science,4,1,Single,2956.0,3,1,No
+24,Tech Department,1,Computer Science,4,4,Single,2926.0,3,1,Yes
+34,Tech Department,1,Computer Science,1,3,Single,4809.0,3,4,No
+37,Tech Department,2,Computer Science,3,4,Single,5163.0,4,1,No
+25,Legal and Admin,1,Law,3,3,Single,5744.0,3,6,Yes
+25,Legal and Admin,1,Law,4,4,Married,2889.0,3,2,No
+22,Legal and Admin,1,Law,2,4,Single,2871.0,3,1,No
+34,Legal and Admin,1,Law,1,3,Single,6074.0,3,6,Yes
+24,Legal and Admin,1,Law,2,3,Married,2774.0,3,5,Yes
+34,Legal and Admin,1,Law,3,2,Married,4505.0,3,1,Yes
+37,Legal and Admin,2,Law,3,4,Single,7428.0,3,5,Yes
+34,Legal and Admin,1,Law,3,1,Single,11631.0,3,7,Yes
+36,Legal and Admin,2,Law,2,4,Married,9738.0,3,9,Yes
+36,Legal and Admin,1,Law,1,4,Married,2835.0,3,1,Yes
+30,Legal and Admin,1,Law,1,3,Married,2613.0,2,3,Yes
+33,Legal and Admin,1,Law,3,2,Married,6146.0,4,7,Yes
+31,Legal and Admin,1,Law,2,3,Married,6172.0,2,5,Yes
+26,Legal and Admin,1,Law,3,2,Married,2368.0,2,2,Yes
+27,Legal and Admin,1,Law,4,3,Single,1675.0,2,1,Yes
+24,Legal and Admin,1,Law,3,4,Married,2523.0,3,2,Yes
+43,Legal and Admin,1,Law,2,3,Single,4739.0,3,3,No
+31,Legal and Admin,1,Law,2,3,Married,4559.0,3,2,Yes
+41,Legal and Admin,1,Law,3,3,Married,8189.0,3,9,No
+26,Human Resources,1,Human Resources,3,3,Married,2942.0,3,8,No
+36,Brokerage,1,Finance,2,2,Single,4941.0,3,3,Yes
+39,Brokerage,1,Finance,4,3,Married,5902.0,4,10,Yes
+25,Brokerage,1,Finance,1,3,Married,8639.0,3,2,No
+30,Brokerage,1,Finance,3,4,Married,6347.0,1,5,No
+32,Brokerage,1,Finance,1,1,Single,4200.0,4,5,Yes
+45,Brokerage,1,Finance,3,4,Single,3452.0,2,6,No
+38,Brokerage,1,Finance,4,3,Single,4317.0,3,3,No
+30,Brokerage,1,Finance,1,3,Single,2632.0,2,5,No
+32,Brokerage,1,Finance,4,4,Married,4668.0,4,5,No
+30,Brokerage,1,Finance,4,1,Married,3204.0,3,3,No
+30,Brokerage,1,Finance,2,4,Single,2720.0,3,5,No
+41,Client Services,1,Business Admin,4,1,Married,17181.0,2,7,Yes
+41,Client Services,1,Business Admin,3,1,Married,2238.0,3,5,Yes
+24,Client Services,1,Business Admin,2,2,Single,1483.0,3,1,Yes
+40,Client Services,1,Business Admin,2,2,Married,5605.0,3,10,Yes
+35,Client Services,1,Business Admin,3,2,Married,7295.0,3,8,Yes
+32,Client Services,1,Business Admin,2,4,Single,8998.0,3,4,No
+29,Client Services,1,Business Admin,4,3,Married,4319.0,3,4,No
+40,Client Services,1,Business Admin,3,4,Married,10855.0,2,12,No
+34,Client Services,1,Business Admin,3,3,Married,2231.0,3,4,No
+22,Client Services,1,Business Admin,3,4,Married,2323.0,3,2,No
+27,Client Services,1,Business Admin,4,2,Single,2024.0,1,2,No
+28,Client Services,1,Business Admin,3,4,Married,2713.0,1,5,No
+27,Client Services,1,Business Admin,3,3,Single,2566.0,2,1,No
+41,Client Services,1,Business Admin,1,3,Single,2451.0,3,9,No
+30,Client Services,1,Business Admin,2,4,Married,9419.0,3,3,No
+38,Client Services,1,Business Admin,1,4,Single,8686.0,4,8,No
+32,Human Resource,1,Human Resources,3,3,Single,3038.0,3,5,Yes
+27,Human Resource,1,Human Resources,3,2,Married,3058.0,2,5,Yes
+25,Human Resource,1,Human Resources,3,1,Single,2325.0,4,1,Yes
+36,Human Resource,1,Human Resources,4,2,Single,2088.0,2,8,Yes
+30,Human Resource,1,Human Resources,3,1,Single,3072.0,3,2,Yes
+33,Human Resource,1,Human Resources,3,4,Single,2500.0,4,3,Yes
+29,Human Resource,1,Human Resources,2,4,Single,1102.0,2,1,Yes
+38,Human Resource,1,Human Resources,3,4,Single,2288.0,3,2,No
+31,Human Resource,1,Human Resources,3,4,Married,3929.0,3,4,No
+34,Human Resource,1,Human Resources,4,2,Single,2311.0,3,3,No
+41,Human Resource,1,Human Resources,2,2,Single,3140.0,2,4,Yes
+33,Human Resource,1,Human Resources,4,2,Married,2756.0,3,8,No
+40,Human Resource,1,Human Resources,4,3,Married,19033.0,3,10,No
+34,Human Resource,1,Human Resources,4,3,Married,9547.0,2,6,No
+27,Human Resource,1,Human Resources,4,2,Single,2279.0,2,2,No
+35,Personal Finance,1,Finance,2,3,Married,5916.0,3,1,Yes
+37,Personal Finance,1,Finance,2,1,Married,3564.0,2,8,No
+35,Personal Finance,1,Finance,2,2,Single,4425.0,3,6,No
+42,Personal Finance,1,Finance,3,3,Single,5265.0,3,5,No
+38,Personal Finance,1,Finance,4,3,Married,6553.0,3,1,No
+38,Personal Finance,1,Finance,4,4,Married,6261.0,1,7,No
+27,Personal Finance,1,Finance,3,1,Married,4298.0,3,2,No
+34,Personal Finance,1,Finance,4,3,Single,3815.0,4,5,No
+38,Personal Finance,1,Finance,2,1,Married,6673.0,3,1,Yes
+29,Tech Department,1,Computer Science,2,4,Married,7639.0,2,3,Yes
+22,Tech Department,1,Computer Science,4,2,Married,2328.0,2,1,No
+36,Tech Department,1,Computer Science,2,4,Single,2153.0,3,8,No
+32,Tech Department,1,Computer Science,4,4,Married,10400.0,2,4,Yes
+30,Tech Department,1,Computer Science,3,3,Single,8474.0,3,1,No
+27,Tech Department,1,Computer Science,4,3,Single,9981.0,3,1,No
+30,Tech Department,1,Computer Science,4,1,Single,2657.0,3,5,Yes
+30,Tech Department,1,Computer Science,3,1,Single,6696.0,2,6,Yes
+29,Tech Department,1,Computer Science,3,3,Single,2058.0,2,6,Yes
+36,Tech Department,1,Computer Science,4,2,Single,5914.0,4,7,No
+33,Tech Department,1,Computer Science,3,2,Married,2622.0,3,3,No
+37,Tech Department,1,Computer Science,2,4,Married,12185.0,3,10,No
+38,Brokerage,1,Finance,1,3,Married,10609.0,2,10,No
+31,Brokerage,1,Finance,3,3,Married,4345.0,3,5,No
+37,Brokerage,1,Finance,1,4,Married,2793.0,3,9,No
+29,Brokerage,1,Finance,2,4,Married,7918.0,3,11,No
+35,Brokerage,1,Finance,3,3,Single,8789.0,4,10,No
+29,Brokerage,1,Finance,3,4,Single,2389.0,2,4,Yes
+42,Brokerage,1,Finance,3,4,Married,19232.0,3,12,No
+33,Brokerage,1,Finance,3,4,Married,2436.0,1,5,Yes
+33,Brokerage,1,Finance,1,1,Married,2707.0,4,9,Yes
+32,Brokerage,1,Finance,3,2,Married,3931.0,3,4,No
+32,Client Services,1,Business Admin,4,3,Single,3730.0,1,3,Yes
+39,Client Services,1,Business Admin,3,3,Single,2232.0,3,3,Yes
+32,Client Services,1,Business Admin,3,4,Married,4465.0,3,3,Yes
+31,Client Services,1,Business Admin,2,3,Single,13675.0,3,2,Yes
+33,Client Services,1,Business Admin,3,4,Married,2911.0,2,2,Yes
+34,Client Services,1,Business Admin,4,1,Married,5957.0,3,7,Yes
+37,Client Services,2,Business Admin,3,1,Married,3920.0,2,3,No
+37,Client Services,1,Business Admin,1,3,Single,10048.0,3,1,Yes
+39,Client Services,2,Business Admin,3,3,Single,10938.0,3,10,No
+29,Client Services,1,Business Admin,3,4,Single,2340.0,3,3,No
+29,Client Services,1,Business Admin,4,4,Single,6931.0,3,3,No
+25,Legal and Admin,1,Law,1,3,Married,4898.0,3,1,Yes
+31,Legal and Admin,1,Law,3,2,Single,3479.0,4,5,Yes
+32,Legal and Admin,1,Law,2,2,Married,2794.0,1,5,Yes
+38,Legal and Admin,2,Law,4,4,Married,5249.0,3,8,Yes
+32,Legal and Admin,1,Law,4,1,Single,2176.0,3,6,Yes
+28,Legal and Admin,1,Law,1,3,Single,3485.0,1,4,Yes
+29,Legal and Admin,1,Law,1,2,Married,6644.0,3,5,Yes
+31,Legal and Admin,1,Law,2,4,Married,5582.0,3,4,No
+25,Legal and Admin,1,Law,2,1,Single,4000.0,3,1,No
+36,Legal and Admin,1,Law,4,4,Married,3210.0,3,9,No
+28,Legal and Admin,1,Law,4,4,Married,2070.0,2,5,No
+37,Legal and Admin,1,Law,3,4,Married,6502.0,4,5,No
+31,Customer Service,1,Social Science,4,3,Single,3230.0,4,3,No
+37,Customer Service,1,Social Science,1,4,Single,13603.0,3,5,Yes
+35,Customer Service,1,Social Science,2,2,Single,11996.0,2,7,Yes
+38,Customer Service,1,Social Science,1,1,Single,5605.0,3,8,Yes
+26,Customer Service,1,Social Science,3,2,Single,6397.0,1,6,Yes
+29,Customer Service,1,Social Science,2,4,Single,4554.0,2,4,Yes
+26,Customer Service,1,Social Science,1,1,Married,4741.0,3,2,No
+37,Customer Service,1,Social Science,4,4,Single,2115.0,3,9,No
+38,Customer Service,1,Social Science,4,4,Single,5745.0,3,2,No
+26,Customer Service,1,Social Science,1,2,Single,2373.0,3,3,Yes
+28,Customer Service,1,Social Science,4,4,Single,3310.0,3,5,No
+36,Customer Service,1,Social Science,3,2,Single,4485.0,3,8,No
+31,Customer Service,1,Social Science,4,2,Married,2789.0,2,2,No
+26,Portfolio,1,Finance,4,4,Single,5828.0,3,2,Yes
+37,Portfolio,1,Finance,2,4,Married,2326.0,2,4,Yes
+28,Portfolio,1,Finance,3,3,Single,1420.0,3,3,Yes
+35,Portfolio,1,Finance,3,2,Married,8020.0,2,7,Yes
+36,Portfolio,1,Finance,3,4,Married,3688.0,3,1,Yes
+38,Portfolio,1,Finance,4,3,Single,1200.0,3,11,Yes
+28,Portfolio,1,Finance,2,1,Single,5661.0,3,6,Yes
+31,Portfolio,1,Finance,2,4,Married,6929.0,2,8,No
+39,Portfolio,1,Finance,3,4,Married,9613.0,2,9,No
+36,Portfolio,1,Finance,2,2,Married,5674.0,3,9,No
+32,Portfolio,1,Finance,4,3,Married,5484.0,2,3,No
+38,Portfolio,1,Finance,1,2,Married,12061.0,3,10,No
+27,Human Resource,1,Human Resources,3,2,Single,2478.0,2,2,No
+32,Human Resource,1,Human Resources,3,2,Married,5228.0,3,4,No
+27,Human Resource,1,Human Resources,4,3,Single,4478.0,3,2,No
+31,Human Resource,1,Human Resources,4,4,Married,7547.0,3,4,No
+32,Human Resource,1,Human Resources,1,4,Single,5055.0,2,4,No
+28,Human Resource,1,Human Resources,1,4,Married,3464.0,2,3,Yes
+30,Human Resource,1,Human Resources,4,4,Married,5775.0,3,4,No
+31,Human Resource,1,Human Resources,3,3,Married,8943.0,3,4,No
+39,Human Resource,2,Human Resources,3,4,Married,19272.0,3,8,No
+39,Human Resource,2,Human Resources,4,3,Married,5238.0,2,7,Yes
+33,Human Resource,1,Human Resources,2,4,Single,4682.0,2,7,No
+29,Human Resource,1,Human Resources,2,1,Married,2119.0,2,3,Yes
+29,Marketing Department,1,Marketing,2,4,Single,3983.0,3,3,No
+30,Marketing Department,1,Marketing,4,3,Married,6118.0,3,2,No
+27,Marketing Department,1,Marketing,2,2,Married,6214.0,3,2,No
+37,Marketing Department,2,Marketing,4,4,Married,6347.0,2,6,No
+38,Marketing Department,1,Marketing,3,4,Married,11510.0,3,11,No
+31,Marketing Department,1,Marketing,3,4,Single,7143.0,2,3,No
+29,Marketing Department,1,Marketing,4,2,Married,8268.0,3,4,No
+35,Marketing Department,1,Marketing,3,2,Single,8095.0,3,6,No
+23,Marketing Department,1,Marketing,3,4,Married,2904.0,2,1,No
+31,Marketing Department,1,Marketing,3,2,Married,10648.0,4,3,No
+33,Marketing Department,1,Marketing,2,3,Married,13610.0,4,5,Yes
+33,Marketing Department,1,Marketing,1,4,Single,3408.0,3,4,Yes
+30,Marketing Department,1,Marketing,4,2,Single,2983.0,3,3,No
+35,Strategic Initiatives,1,Business Admin,4,3,Married,7632.0,3,8,No
+31,Strategic Initiatives,1,Business Admin,1,3,Married,9824.0,3,1,Yes
+34,Strategic Initiatives,1,Business Admin,2,1,Single,9950.0,3,3,Yes
+25,Strategic Initiatives,1,Business Admin,2,3,Married,2096.0,3,2,No
+24,Strategic Initiatives,1,Business Admin,1,3,Married,2886.0,3,2,Yes
+30,Strategic Initiatives,1,Finance,2,1,Married,2033.0,4,1,Yes
+34,Strategic Initiatives,1,Finance,2,4,Married,3622.0,3,6,No
+31,Strategic Initiatives,1,Finance,2,1,Single,4233.0,1,3,Yes
+35,Strategic Initiatives,1,Finance,1,4,Single,3681.0,3,3,No
+31,Strategic Initiatives,1,Finance,1,4,Single,5460.0,4,4,No
+27,Strategic Initiatives,1,Finance,1,3,Single,2187.0,2,3,No
+37,Strategic Initiatives,1,Marketing,4,3,Married,9602.0,2,3,No
+24,Strategic Initiatives,1,Marketing,4,2,Single,2836.0,4,1,No
+36,Strategic Initiatives,1,Marketing,2,2,Married,8847.0,3,3,No
+27,Strategic Initiatives,1,Marketing,1,4,Single,2045.0,3,2,No
+26,Strategic Initiatives,1,Marketing,4,3,Single,1009.0,3,1,Yes
+33,Relationship Mgt,1,Social Science,1,1,Single,3348.0,3,6,Yes
+35,Relationship Mgt,1,Social Science,3,3,Married,1281.0,3,1,Yes
+23,Relationship Mgt,1,Social Science,1,1,Married,2819.0,4,1,Yes
+25,Relationship Mgt,1,Social Science,4,2,Married,4851.0,3,1,Yes
+38,Relationship Mgt,1,Social Science,4,4,Single,4028.0,3,7,Yes
+29,Relationship Mgt,1,Social Science,2,4,Married,2720.0,3,4,Yes
+33,Relationship Mgt,1,Social Science,4,4,Married,7119.0,3,3,No
+35,Relationship Mgt,1,Social Science,4,1,Single,9582.0,3,8,Yes
+33,Relationship Mgt,1,Business Admin,1,3,Single,4508.0,3,5,Yes
+28,Relationship Mgt,1,Business Admin,1,3,Married,2207.0,2,4,No
+34,Relationship Mgt,1,Business Admin,1,4,Single,7756.0,2,6,No
+37,Relationship Mgt,2,Business Admin,4,4,Married,6694.0,3,1,No
+25,Relationship Mgt,1,Business Admin,4,4,Married,3691.0,4,1,Yes
+26,Relationship Mgt,1,Business Admin,1,3,Married,2377.0,2,1,Yes
+33,Relationship Mgt,1,Business Admin,1,2,Single,2313.0,3,2,Yes
+21,Relationship Mgt,1,Marketing,4,2,Single,2070.0,4,2,No
+39,Relationship Mgt,2,Marketing,3,2,Single,6782.0,2,5,No
+36,Relationship Mgt,1,Marketing,1,4,Single,7779.0,3,11,No
+31,Relationship Mgt,1,Marketing,3,4,Married,2791.0,3,2,No
+28,Strategic Initiatives,1,Finance,1,2,Married,3201.0,1,5,No
+35,Strategic Initiatives,1,Finance,4,4,Married,4968.0,3,5,No
+29,Strategic Initiatives,1,Finance,2,4,Married,5056.0,2,5,No
+38,Strategic Initiatives,1,Finance,3,3,Married,2844.0,4,7,No
+28,Strategic Initiatives,1,Finance,3,3,Single,2703.0,3,3,No
+28,Human Resource,1,Human Resources,3,3,Single,1904.0,3,1,Yes
+33,Human Resource,1,Human Resources,1,1,Single,8224.0,3,5,Yes
+31,Human Resource,1,Human Resources,3,3,Married,2610.0,2,2,Yes
+37,Human Resource,1,Human Resources,3,4,Single,5731.0,3,6,No
+27,Human Resource,1,Human Resources,4,3,Married,2539.0,3,1,No
+34,Tech Department,1,Computer Science,2,3,Married,5714.0,2,6,Yes
+35,Tech Department,1,Computer Science,3,3,Single,4323.0,1,5,Yes
+29,Tech Department,1,Computer Science,4,1,Married,7336.0,1,3,Yes
+35,Tech Department,1,Computer Science,4,3,Married,2258.0,3,8,Yes
+24,Tech Department,1,Computer Science,4,2,Single,3597.0,3,1,Yes
+28,Tech Department,1,Computer Science,3,4,Married,2515.0,2,1,Yes
+26,Tech Department,1,Computer Science,1,4,Married,4420.0,3,1,Yes
+30,Tech Department,1,Computer Science,3,3,Married,6578.0,3,2,Yes
+35,Customer Service,2,Social Science,3,2,Single,10274.0,4,7,Yes
+34,Customer Service,1,Social Science,4,1,Single,5343.0,3,6,Yes
+35,Customer Service,1,Social Science,4,4,Married,2376.0,4,2,Yes
+29,Customer Service,1,Social Science,2,4,Married,3131.0,3,3,Yes
+29,Customer Service,1,Social Science,3,1,Single,2552.0,3,4,No
