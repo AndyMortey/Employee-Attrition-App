@@ -1,0 +1,15 @@
+credentials:
+  usernames:
+    attritionapp:
+      email: morteyandrews@gmail.com
+      logged_in: False # Will be managed automatically
+      name: Andy Etornam Mortey
+      password: '123' # Will be hashed automatically
+cookie:
+  expiry_days: 0
+  key: cookie_signature_key # Must be string
+  name: cookie_name
+pre-authorized:
+  emails:
+  - aemortey002@st.ug.edu.gh
+users:
