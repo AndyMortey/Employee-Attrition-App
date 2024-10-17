@@ -1,56 +1,48 @@
 import streamlit as st
-import streamlit_authenticator as stauth
-import yaml
-from yaml.loader import SafeLoader
-from Utils.info import column_1, column_2
 
-# Page configuration
+# Set the page configuration
 st.set_page_config(
-    page_title='Home',
-    layout='wide',
-    page_icon='🏠'
+    page_title="Home Page",
+    page_icon="🏠",
+    layout="wide"
 )
 
-# Load the configuration from config.yaml
-with open('./config.yaml') as file:
-    config = yaml.load(file, Loader=SafeLoader)
+# Home page content
+def main():
+    st.title("Employee Attrition Prediction App")
+    st.subheader("Welcome to the Employee Attrition Prediction Application")
+    st.write(
+        """
+        This application helps organizations predict employee attrition using 
+        machine learning models. By analyzing past employee data, the app provides 
+        insights into the likelihood of employees leaving the company.
+        
+        ## How to Use this App:
+        - **Data Upload:** Upload the employee dataset in the required format.
+        - **Data Analysis:** View summary statistics, visualize patterns, and understand key factors.
+        - **Prediction:** Input new employee data to predict the likelihood of attrition.
+        - **Results:** Review the predictions and take data-driven actions.
+        
+        ## About Employee Attrition
+        Employee attrition refers to the gradual loss of employees over time. 
+        High attrition rates can indicate dissatisfaction or issues within the 
+        organization. Understanding the reasons behind attrition can help 
+        organizations improve retention strategies.
+        
+        Use this app to identify at-risk employees and make informed decisions 
+        to foster a more stable workforce.
+        """
+    )
+    st.image("assets/HomePage.png", caption="Predicting Employee Attrition", use_column_width=True)
+    st.write("Feel free to navigate to other sections using the sidebar.")
 
-# Initialize the authenticator
-authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days']
-)
+    # Links section
+    st.subheader("Useful Links and Information")
+    st.markdown("""
+    - [GitHub Repository: Employee Attrition App](https://github.com/AndyMortey/Employee-Attrition-App)
+    - [GitHub Repository: Employee Attrition Predictor](https://github.com/AndyMortey/Employee-Attrition-Predictor)
+    """)
 
-# Authenticate users
-login_response = authenticator.login(location='sidebar')
-
-if login_response is not None:
-    name, authentication_status, username = login_response
-
-    # Display the home page if authentication is successful
-    if st.session_state['authentication_status']:
-        authenticator.logout(location='sidebar')
-        st.title('Attrition Predictor')
-
-        col1, col2 = st.columns(2)
-        with col1:
-            column_1
-        with col2:
-            column_2
-
-    # Display an error if authentication fails
-    elif st.session_state['authentication_status'] is False:
-        st.error('Wrong username/password')
-
-    # Display a login prompt if no authentication is provided
-    elif st.session_state['authentication_status'] is None:
-        st.info('Login to get access to the app')
-        st.code("""
-        Test Account
-        Username: attritionapp
-        Password: 123456
-        """)
-else:
-    st.error("Login failed. Please try again.")
+if __name__ == "__main__":
+    main()
+       
