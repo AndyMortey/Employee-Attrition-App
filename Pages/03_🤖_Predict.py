@@ -8,7 +8,8 @@ import os
 st.set_page_config(
     page_title="Predict Attrition",
     page_icon="🔍",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # Load the trained model and encoder
