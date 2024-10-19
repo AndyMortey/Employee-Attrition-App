@@ -7,7 +7,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
+# Sidebar content
+with st.sidebar:
+    st.header("Sidebar")
 # Home page content
 def main():
     st.title("Employee Attrition Prediction App")
