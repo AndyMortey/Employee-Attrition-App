@@ -7,9 +7,15 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-# Sidebar content
+# Define different page functions
+def home_page():
+    st.write("Welcome to the Home Page!")
+
+# Sidebar navigation
 with st.sidebar:
-    st.header("Sidebar")
+    st.header("Navigation")
+    page = st.selectbox("Choose a page", options=["Home", "Data", "Predict", "History"])
+
 # Home page content
 def main():
     st.title("Employee Attrition Prediction App")
@@ -45,6 +51,16 @@ def main():
     - [GitHub Repository: Employee Attrition App](https://github.com/AndyMortey/Employee-Attrition-App)
     - [GitHub Repository: Employee Attrition Predictor](https://github.com/AndyMortey/Employee-Attrition-Predictor)
     """)
+
+# Display the selected page
+if page == "Home":
+    home_page()
+elif page == "Data":
+    data_page()
+elif page == "Predict":
+    predict_page()
+elif page == "History":
+    history_page()
 
 if __name__ == "__main__":
     main()
