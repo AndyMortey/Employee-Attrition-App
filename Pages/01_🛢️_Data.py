@@ -79,6 +79,6 @@ elif page == "Predict":
 elif page == "History":
     history_page()
 # Run the app
-if __name__ == "__load_data_page__":
+if __name__ == "__data_page__":
     load_data_page()
 
