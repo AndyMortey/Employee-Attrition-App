@@ -29,7 +29,7 @@ with st.sidebar:
     page = st.selectbox("Choose a page", options=["Home", "Data", "Predict", "History"])
 
 # Home page content
-def main():
+def home_page():
     st.title("Employee Attrition Prediction App")
     st.subheader("Welcome to the Employee Attrition Prediction Application")
     st.write(
