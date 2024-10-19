@@ -5,7 +5,8 @@ import pandas as pd
 st.set_page_config(
     page_title="Data Page",
     page_icon="🛢️",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # Data page content
