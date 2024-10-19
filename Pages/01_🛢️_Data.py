@@ -9,6 +9,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Sidebar content
+with st.sidebar:
+    st.header("Sidebar")
+    
 # Data page content
 def load_data_page():
     st.title("Data Upload and Overview")
