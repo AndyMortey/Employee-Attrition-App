@@ -11,18 +11,6 @@ st.set_page_config(
 def home_page():
     st.write("Welcome to the Home Page!")
 
-def data_page():
-    st.title("Data Page")
-    st.write("Upload and explore data here.")
-
-def predict_page():
-    st.title("Predict Page")
-    st.write("Use this page to make predictions.")
-
-def history_page():
-    st.title("History Page")
-    st.write("View prediction history here.")
-
 # Sidebar navigation
 with st.sidebar:
     st.header("Navigation")
