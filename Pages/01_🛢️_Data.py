@@ -78,7 +78,3 @@ elif page == "Predict":
     predict_page()
 elif page == "History":
     history_page()
-
-# Load the data page function
-if __name__ == "__main__":
-    load_data_page()
