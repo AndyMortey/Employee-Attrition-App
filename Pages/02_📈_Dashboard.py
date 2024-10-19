@@ -11,6 +11,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Sidebar content
+with st.sidebar:
+    st.header("Sidebar")
+
 # Load dataset
 @st.cache_data
 def load_data():
