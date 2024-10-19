@@ -12,6 +12,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# Sidebar content
+with st.sidebar:
+    st.header("Sidebar")
+
 # Load the trained model and encoder
 @st.cache_resource
 def load_model_and_encoder():
