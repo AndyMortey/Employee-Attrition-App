@@ -73,7 +73,3 @@ elif page == "Predict":
     predict_page()
 elif page == "History":
     history_page()
-
-if __name__ == "__main__":
-    main()
-       
