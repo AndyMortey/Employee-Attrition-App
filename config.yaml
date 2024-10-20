@@ -1,6 +1,6 @@
 credentials:
   usernames:
-    attritionapp:
+    attrition:
       name: Employee Attrition User
       email: morteyandrews@gmail.com
       logged_in: False  
