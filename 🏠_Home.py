@@ -19,18 +19,26 @@ authenticator = stauth.Authenticate(
     config['credentials'],
     config['cookie']['name'],
     config['cookie']['key'],
-    config['cookie']['expiry_days']
+    config['cookie']['expiry_days'],
+    config.get('pre-authorized', [])
 )
+
+# Initialize variables
+name = None
+authentication_status = None
+username = None
 
 # Authentication
 try:
-    name, authentication_status, username = authenticator.login(location="sidebar")
+    result = authenticator.login(location="sidebar")
+    if result is not None:
+        name, authentication_status, username = result
 except Exception as e:
     st.error(f"Authentication error: {e}")
 
 # Home page content
 def home_page():
-    if st.session_state.get("authentication_status"):
+    if authentication_status:
         authenticator.logout("Logout", "sidebar")
         st.title(f"Welcome, {name}!")
         st.write("You're logged in. Navigate using the sidebar to access different sections.")
@@ -67,12 +75,13 @@ def home_page():
         - [GitHub Repository: Employee Attrition App](https://github.com/AndyMortey/Employee-Attrition-App)
         - [GitHub Repository: Employee Attrition Predictor](https://github.com/AndyMortey/Employee-Attrition-Predictor)
         """)
-    elif st.session_state.get("authentication_status") is False:
+    elif authentication_status is False:
         st.error("Wrong username/password")
-    elif st.session_state.get("authentication_status") is None:
+    elif authentication_status is None:
         st.info("Please login to access the website")
         st.write("**Default Username/Password:**")
-        st.write("- Username: attrition")
-        st.write("- Password: 11111")
+        st.write("- Username: customerchurn")
+        st.write("- Password: 33333")
+
 if __name__ == "__main__":
     home_page()
