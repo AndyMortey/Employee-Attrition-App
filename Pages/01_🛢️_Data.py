@@ -8,6 +8,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+# Sidebar content
+with st.sidebar:
+    st.header("Sidebar")
 
 # Sidebar content
 with st.sidebar:
