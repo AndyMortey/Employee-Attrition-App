@@ -67,9 +67,12 @@ def home_page():
         - [GitHub Repository: Employee Attrition App](https://github.com/AndyMortey/Employee-Attrition-App)
         - [GitHub Repository: Employee Attrition Predictor](https://github.com/AndyMortey/Employee-Attrition-Predictor)
         """)
-    else:
-        st.title("Employee Attrition Prediction App")
-        st.warning("Please log in to access the app.")
-
+    elif st.session_state.get("authentication_status") is False:
+        st.error("Wrong username/password")
+    elif st.session_state.get("authentication_status") is None:
+        st.info("Please login to access the website")
+        st.write("**Default Username/Password:**")
+        st.write("- Username: attrition")
+        st.write("- Password: 11111")
 if __name__ == "__main__":
     home_page()
