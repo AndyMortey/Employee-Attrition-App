@@ -1,17 +1,9 @@
 import streamlit as st
 import pandas as pd
-import joblib
-import os
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-# Set the page configuration
-st.set_page_config(
-    page_title="Home Page",
-    page_icon="🏠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+import joblib
+import os
 
 # Home page content
 def home_page():
