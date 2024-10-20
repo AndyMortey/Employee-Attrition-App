@@ -22,6 +22,11 @@ authenticator = stauth.Authenticate(
     config['cookie']['expiry_days']
 )
 
+# Initialize authentication variables
+name = None
+authentication_status = None
+username = None
+
 # Authentication
 try:
     name, authentication_status, username = authenticator.login("Login", "sidebar")
@@ -67,12 +72,13 @@ def home_page():
     """)
 
 # Check the authentication status and display content accordingly
-if authentication_status:
-    authenticator.logout("Logout", "sidebar")
-    home_page()
-elif authentication_status is False:
-    st.error("Wrong username/password")
-elif authentication_status is None:
+if authentication_status is not None:  # Ensure it's defined
+    if authentication_status:
+        authenticator.logout("Logout", "sidebar")
+        home_page()
+    elif authentication_status is False:
+        st.error("Wrong username/password")
+else:
     st.info("Please login to access the website")
     st.write("**Default Username/Password:**")
     st.write("- Username: attrition")
