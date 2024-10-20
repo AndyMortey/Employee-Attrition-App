@@ -80,8 +80,8 @@ def home_page():
     elif authentication_status is None:
         st.info("Please login to access the website")
         st.write("**Default Username/Password:**")
-        st.write("- Username: customerchurn")
-        st.write("- Password: 33333")
+        st.write("- Username: attrition")
+        st.write("- Password: 11111")
 
 if __name__ == "__main__":
     home_page()
