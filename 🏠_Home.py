@@ -28,14 +28,11 @@ authentication_status = None
 username = None
 
 # Authentication
-try:
-    name, authentication_status, username = authenticator.login("Login", "sidebar")
-except Exception as e:
-    st.error(f"Authentication error: {e}")
+name, authentication_status, username = authenticator.login("Login", "sidebar")
 
 # Home page content
 def home_page():
-    st.title(f"Welcome, {name}!")
+    st.title(f"Welcome, {name}! ")
     st.write("You're logged in. Navigate using the sidebar to access different sections.")
     
     st.subheader("Welcome to the Employee Attrition Prediction Application")
@@ -72,12 +69,11 @@ def home_page():
     """)
 
 # Check the authentication status and display content accordingly
-if authentication_status is not None:  # Ensure it's defined
-    if authentication_status:
-        authenticator.logout("Logout", "sidebar")
-        home_page()
-    elif authentication_status is False:
-        st.error("Wrong username/password")
+if authentication_status:
+    authenticator.logout("Logout", "sidebar")
+    home_page()
+elif authentication_status is False:
+    st.error("Wrong username/password")
 else:
     st.info("Please login to access the website")
     st.write("**Default Username/Password:**")
