@@ -1,13 +1,11 @@
 credentials:
   usernames:
     attrition:
-      name: Employee Attrition User
-      email: morteyandrews@gmail.com
-      logged_in: False  
-      password: '$2b$12$LDwH6Qj/MHgF7Tb/67lKQOWL.d/1YWi6ewW5ANprBM1RdGURQ7mvS'  
-     
+      password: '$2b$12$5Zqun2t.fYhmMX7e17VM7OoaD6ynHCH4pDCkiG7zs8F4ZWMF284l2'
+      name: 'Employee Attrition Predictor'
+
 cookie:
-  expiry_days: 0 
-  key: 'some_signature_key' 
-  name: 'attrition_app_cookie' 
+  expiry_days: 0
+  key: 'some_signature_key'
+  name: 'attrition_app_cookie'
 
