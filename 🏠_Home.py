@@ -1,11 +1,13 @@
 import streamlit as st
+import yaml
+from yaml.loader import SafeLoader
+import streamlit_authenticator as stauth
 
 # Set the page configuration
 st.set_page_config(
     page_title="Home Page",
     page_icon="🏠",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
 # Sidebar content
@@ -16,8 +18,10 @@ with st.sidebar:
 with st.sidebar:
     st.header("Sidebar")
 # Home page content
-def main():
-    st.title("Employee Attrition Prediction App")
+def home_page():
+    st.title(f"Welcome, {name}! ")
+    st.write("You're logged in. Navigate using the sidebar to access different sections.")
+    
     st.subheader("Welcome to the Employee Attrition Prediction Application")
     st.write(
         """
@@ -51,6 +55,14 @@ def main():
     - [GitHub Repository: Employee Attrition Predictor](https://github.com/AndyMortey/Employee-Attrition-Predictor)
     """)
 
-if __name__ == "__main__":
-    main()
-       
+# Check the authentication status and display content accordingly
+if authentication_status:
+    authenticator.logout("Logout", "sidebar")
+    home_page()
+elif authentication_status is False:
+    st.error("Wrong username/password")
+else:
+    st.info("Please login to access the website")
+    st.write("**Default Username/Password:**")
+    st.write("- Username: attrition")
+    st.write("- Password: 11111")

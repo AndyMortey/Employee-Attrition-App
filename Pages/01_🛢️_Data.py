@@ -8,9 +8,15 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-# Sidebar content
+
+def data_page():
+    st.title("Data Page")
+    st.write("Upload and explore data here.")
+
+# Sidebar navigation
 with st.sidebar:
-    st.header("Sidebar")
+    st.header("Navigation")
+    page = st.selectbox("Choose a page", options=["Home", "Data", "Predict", "History"])
 
 # Sidebar content
 with st.sidebar:
@@ -67,6 +73,16 @@ def load_data_page():
     st.write(f"Number of rows: {df.shape[0]}")
     st.write(f"Number of columns: {df.shape[1]}")
 
-# Load the data page function
-if __name__ == "__main__":
+# Display the selected page
+if page == "Home":
+    home_page()
+elif page == "Data":
+    data_page()
+elif page == "Predict":
+    predict_page()
+elif page == "History":
+    history_page()
+# Run the app
+if __name__ == "__data_page__":
     load_data_page()
+
