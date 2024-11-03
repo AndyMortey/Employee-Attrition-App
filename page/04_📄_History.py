@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import streamlit_authenticator as stauth
 
 # Function to load history data
 @st.cache_data(persist=True)

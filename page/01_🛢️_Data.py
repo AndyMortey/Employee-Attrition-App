@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import streamlit_authenticator as stauth
 
 # Data page content
 def load_data_page():

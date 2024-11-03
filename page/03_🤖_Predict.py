@@ -3,6 +3,7 @@ import pandas as pd
 import joblib
 import numpy as np
 import os
+import streamlit_authenticator as stauth
 
 # Set page configuration
 st.set_page_config(
