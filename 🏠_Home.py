@@ -1,6 +1,4 @@
 import streamlit as st
-import yaml
-from yaml.loader import SafeLoader
 import streamlit_authenticator as stauth
 
 # Set the page configuration
@@ -10,18 +8,9 @@ st.set_page_config(
     layout="wide"
 )
 
-# Sidebar content
-with st.sidebar:
-    st.header("Sidebar")
-    
-# Sidebar content
-with st.sidebar:
-    st.header("Sidebar")
 # Home page content
-def home_page():
-    st.title(f"Welcome, {name}! ")
-    st.write("You're logged in. Navigate using the sidebar to access different sections.")
-    
+def main():
+    st.title("Employee Attrition Prediction App")
     st.subheader("Welcome to the Employee Attrition Prediction Application")
     st.write(
         """
@@ -45,8 +34,6 @@ def home_page():
         to foster a more stable workforce.
         """
     )
-    st.image("assets/HomePage.png", caption="Predicting Employee Attrition", use_column_width=True)
-    st.write("Feel free to navigate to other sections using the sidebar.")
 
     # Links section
     st.subheader("Useful Links and Information")
@@ -55,14 +42,8 @@ def home_page():
     - [GitHub Repository: Employee Attrition Predictor](https://github.com/AndyMortey/Employee-Attrition-Predictor)
     """)
 
-# Check the authentication status and display content accordingly
-if authentication_status:
-    authenticator.logout("Logout", "sidebar")
-    home_page()
-elif authentication_status is False:
-    st.error("Wrong username/password")
-else:
-    st.info("Please login to access the website")
-    st.write("**Default Username/Password:**")
-    st.write("- Username: attrition")
-    st.write("- Password: 11111")
+    st.image("assets/HomePage.png", caption="Predicting Employee Attrition", use_column_width=True)
+    st.write("Feel free to navigate to other sections using the sidebar.")
+
+if __name__ == "__main__":
+    main()

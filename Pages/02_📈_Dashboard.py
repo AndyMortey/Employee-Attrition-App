@@ -6,15 +6,10 @@ import seaborn as sns
 # Set page configuration
 st.set_page_config(
     page_title="Dashboard",
-    page_icon="📈",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    page_icon="📊",
+    layout="wide"
 )
 
-# Sidebar content
-with st.sidebar:
-    st.header("Sidebar")
-   
 # Load dataset
 @st.cache_data
 def load_data():
