@@ -1,0 +1,5 @@
+services:
+  - type: web
+    name: Employee-Attrition-App
+    runtime: python
+    startCommand: streamlit run "🏠_Home.py"
