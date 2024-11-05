@@ -218,17 +218,40 @@ def prediction_page():
         st.success("The employee is likely to leave the company." if prediction == 1 else "The employee is likely to stay with the company.")
 
 # History page content
+# Function to load history data
+@st.cache_data(persist=True)
+def load_history():
+    csv_path = "Data/history.csv"  # Adjust the path accordingly
+    if os.path.exists(csv_path):
+        return pd.read_csv(csv_path)
+    else:
+        return pd.DataFrame()  # Return an empty DataFrame if file doesn't exist
+
 def display_history_of_all_predictions():
     st.title("Prediction History📄")
 
+    # Button to clear cache
+    if st.button("Clear Cache"):
+        st.cache_data.clear()
+
     # Load history data
-    history_file = 'Data/history.csv'
-    if os.path.exists(history_file):
-        history = pd.read_csv(history_file)
+    history = load_history()
+
+    # Check if the history DataFrame is not empty
+    if not history.empty:
+        st.write("Here are the past predictions:")
         st.dataframe(history)
-        st.download_button("Download history as CSV", data=history.to_csv(index=False), file_name="history.csv")
+        
+        # Download option for the history data
+        st.subheader("Download Data")
+        st.download_button(
+            label="Download history as CSV",
+            data=history.to_csv(index=False).encode('utf-8'),
+            file_name='prediction_history.csv',
+            mime='text/csv'
+        )
     else:
-        st.write("No prediction history available.")
+        st.write("No history of predictions yet.")
 
 # Handle page routing
 if st.session_state['page'] == "Home":
