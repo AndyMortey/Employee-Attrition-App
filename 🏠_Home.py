@@ -8,6 +8,10 @@ st.set_page_config(
     layout="wide"
 )
 
+# Initialize 'page' in session state
+if 'page' not in st.session_state:
+    st.session_state['page'] = 'Home'
+
 # Home page content
 def main():
     st.title("Employee Attrition Prediction App")
@@ -35,6 +39,10 @@ def main():
         """
     )
 
+    # Sidebar Navigation Menu
+    st.sidebar.title("Navigation")
+    st.session_state['page'] = st.sidebar.selectbox("Select Page", ["Home", "Data", "Dashboard", "Predict", "History"])
+
     # Links section
     st.subheader("Useful Links and Information")
     st.markdown("""
@@ -45,5 +53,19 @@ def main():
     st.image("assets/HomePage.png", caption="Predicting Employee Attrition", use_column_width=True)
     st.write("Feel free to navigate to other sections using the sidebar.")
 
+# Page Routing Logic
 if __name__ == "__main__":
-    main()
+    if st.session_state['page'] == "Home":
+        main()
+    elif st.session_state['page'] == "Data":
+        # Define and call your data page function
+        pass
+    elif st.session_state['page'] == "Dashboard":
+        # Define and call your dashboard function
+        pass
+    elif st.session_state['page'] == "Predict":
+        # Define and call your prediction page function
+        pass
+    elif st.session_state['page'] == "History":
+        # Define and call your history page function
+        pass
