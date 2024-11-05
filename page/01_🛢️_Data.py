@@ -83,9 +83,7 @@ def load_data_page():
 
 # Page Routing Logic
 if __name__ == "__main__":
-    if st.session_state['page'] == "Home":
-        main()
-    elif st.session_state['page'] == "Data":
+    if st.session_state['page'] == "Data":
         load_data_page()
     elif st.session_state['page'] == "Dashboard":
         load_dashboard()
