@@ -2,23 +2,17 @@ import streamlit as st
 import pandas as pd
 import streamlit_authenticator as stauth
 
-# Load dataset
-@st.cache_data
-def load_data():
-    try:
-        return pd.read_csv('./Data/cleaned_data.csv')
-    except FileNotFoundError:
-        st.error("The dataset file could not be found. Please ensure that './Data/cleaned_data.csv' exists.")
-        return pd.DataFrame()  # Return an empty DataFrame if loading fails
+# Initialize 'page' in session state
+if 'page' not in st.session_state:
+    st.session_state['page'] = 'Data'
 
-# Display dataset overview
-def display_data_overview(df):
+# Data page content
+def load_data_page():
     st.title("Data Upload and Overview")
     st.subheader("Dataset Overview")
 
-    if df.empty:
-        st.warning("No data to display.")
-        return
+    # Load dataset
+    df = pd.read_csv('./Data/cleaned_data.csv')
 
     # Full dataset section
     st.markdown("<h2 style='font-size:24px;'>Full Dataset</h2>", unsafe_allow_html=True)
@@ -43,6 +37,10 @@ def display_data_overview(df):
     else:
         df_filtered = df
 
+    # Sidebar Navigation Menu
+    st.sidebar.title("Navigation")
+    st.session_state['page'] = st.sidebar.selectbox("Select Page", ["Home", "Data", "Dashboard", "Predict", "History"])
+
     # Display the filtered DataFrame
     st.subheader("Filtered Data Preview")
     st.dataframe(df_filtered.head())
@@ -63,19 +61,7 @@ def display_data_overview(df):
     st.write(f"Number of rows: {df.shape[0]}")
     st.write(f"Number of columns: {df.shape[1]}")
 
-# Sidebar Navigation
-def sidebar_navigation():
-    st.sidebar.title("Navigation")
-    if 'page' not in st.session_state:
-        st.session_state['page'] = "Home"
-    st.session_state['page'] = st.sidebar.selectbox("Select Page", ["Home", "Data", "Dashboard", "Predict", "History"])
-
-# Main function
-def load_data_page():
-    df = load_data()
-    sidebar_navigation()
-    display_data_overview(df)
-
 # Load the data page function
 if __name__ == "__main__":
-    load_data_page()
+    if st.session_state['page'] == "Data":
+        load_data_page()
