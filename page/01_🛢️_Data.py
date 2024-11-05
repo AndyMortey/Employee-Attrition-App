@@ -6,6 +6,26 @@ import streamlit_authenticator as stauth
 if 'page' not in st.session_state:
     st.session_state['page'] = 'Data'
 
+# Home page content placeholder
+def main():
+    st.title("Home Page")
+    st.write("Welcome to the Employee Attrition Prediction App!")
+
+# Dashboard page placeholder
+def load_dashboard():
+    st.title("Dashboard")
+    st.write("This is the Dashboard page.")
+
+# Prediction page placeholder
+def load_predict_page():
+    st.title("Prediction Page")
+    st.write("This is the Prediction page.")
+
+# History page placeholder
+def load_history_page():
+    st.title("History")
+    st.write("This is the History page.")
+
 # Data page content
 def load_data_page():
     st.title("Data Upload and Overview")
@@ -61,7 +81,15 @@ def load_data_page():
     st.write(f"Number of rows: {df.shape[0]}")
     st.write(f"Number of columns: {df.shape[1]}")
 
-# Load the data page function
+# Page Routing Logic
 if __name__ == "__main__":
-    if st.session_state['page'] == "Data":
+    if st.session_state['page'] == "Home":
+        main()
+    elif st.session_state['page'] == "Data":
         load_data_page()
+    elif st.session_state['page'] == "Dashboard":
+        load_dashboard()
+    elif st.session_state['page'] == "Predict":
+        load_predict_page()
+    elif st.session_state['page'] == "History":
+        load_history_page()
