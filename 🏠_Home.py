@@ -185,7 +185,7 @@ def load_model_and_encoder():
 model, threshold, encoder = load_model_and_encoder()
 
 # Preprocess input function (modify according to your preprocessing steps)
-def preprocess_input(input_data):
+def preprocess_input(input_data, encoder):
     # Convert input data to DataFrame
     df = pd.DataFrame([input_data])
 
