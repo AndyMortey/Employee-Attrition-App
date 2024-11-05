@@ -53,6 +53,10 @@ def load_data_page():
     st.write(f"Number of rows: {df.shape[0]}")
     st.write(f"Number of columns: {df.shape[1]}")
 
+    #Navigation Menu
+    st.sidebar.title("Navigation")
+    st.session_state['page'] = st.sidebar.selectbox("Select Page", ["Home", "Data", "Dashboard", "Predict", "History"])
+
 # Load the data page function
 if __name__ == "__main__":
     load_data_page()
