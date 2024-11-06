@@ -284,7 +284,6 @@ def display_history_of_all_predictions():
     # Button to clear cache
     if st.button("Clear Cache"):
         st.cache_data.clear()
-        st.experimental_rerun()
 
     # Load history data
     history = load_history()
